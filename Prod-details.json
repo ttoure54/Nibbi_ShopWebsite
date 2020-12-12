@@ -1,0 +1,84 @@
+
+{
+   "products_details": {
+    "111": {        
+        "title": "T-Shirt Nibbi 1",
+        "quantity": "45",
+        "size_quantity":{"S":3,"M":0,"L":6,"XL":0},
+        "price": "25.00",
+        "Description": "T shirts fait main pour homme imprimé avec Nibbi Logo, 100% coton, manche en Wax, différents coloris et motifs disponibles",
+        "source_mainimg": "/images/Tshirt_lots.jpg",
+        "source_smallimg1" : "/images/men_products/prod1/mainimg.jpg",
+        "source_smallimg2" : "/images/men_products/prod1/mainimg.jpg",
+        "source_smallimg3" : "/images/men_products/prod1/mainimg.jpg",
+        "source_smallimg4" : "/images/men_products/prod1/mainimg.jpg"
+    },
+    "112": {        
+        "title": "T-Shirt Nibbi 2",
+        "quantity": "21",
+        "size_quantity":{"S":3,"M":0,"L":6,"XL":0},
+        "price": "23.00",
+        "Description": "T shirts fait main pour homme imprimé avec Nibbi Logo, 100% coton, manche en Wax, différents coloris et motifs disponibles",
+        "source_mainimg": "/images/Tshirt_lots.jpg",
+        "source_smallimg1" : "/images/men_products/prod1/mainimg.jpg",
+        "source_smallimg2" : "/images/men_products/prod1/mainimg.jpg",
+        "source_smallimg3" : "/images/men_products/prod1/mainimg.jpg",
+        "source_smallimg4" : "/images/men_products/prod1/mainimg.jpg"
+    },
+    "113": {        
+        "title": "T-Shirt Nibbi 3",
+        "quantity": "34",
+        "size_quantity":{"S":3,"M":0,"L":6,"XL":0},
+        "price": "13.00",
+        "Description": "T shirts fait main pour homme imprimé avec Nibbi Logo, 100% coton, manche en Wax, différents coloris et motifs disponibles",
+        "source_mainimg": "/images/Tshirt_lots.jpg",
+        "source_smallimg1" : "/images/men_products/prod1/mainimg.jpg",
+        "source_smallimg2" : "/images/men_products/prod1/mainimg.jpg",
+        "source_smallimg3" : "/images/men_products/prod1/mainimg.jpg",
+        "source_smallimg4" : "/images/men_products/prod1/mainimg.jpg"
+    }, 
+    "114": {        
+        "title": "T-Shirt Nibbi 4",
+        "quantity": "34",
+        "size_quantity":{"S":3,"M":0,"L":6,"XL":0},
+        "price": "5.00",
+        "Description": "T shirts fait main pour homme imprimé avec Nibbi Logo, 100% coton, manche en Wax, différents coloris et motifs disponibles",
+        "source_mainimg": "/images/Tshirt_lots.jpg",
+        "source_smallimg1" : "/images/men_products/prod1/mainimg.jpg",
+        "source_smallimg2" : "/images/men_products/prod1/mainimg.jpg",
+        "source_smallimg3" : "/images/men_products/prod1/mainimg.jpg",
+        "source_smallimg4" : "/images/men_products/prod1/mainimg.jpg"
+    },
+    "115": {        
+        "title": "T-Shirt Nibbi 5",
+        "quantity": "2",
+        "size_quantity":{"S":3,"M":5,"L":6,"XL":0},
+        "price": "9.00",
+        "Description": "T shirts fait main pour homme imprimé avec Nibbi Logo, 100% coton, manche en Wax, différents coloris et motifs disponibles",
+        "source_mainimg": "/images/Tshirt_lots.jpg",
+        "source_smallimg1" : "/images/men_products/prod1/mainimg.jpg",
+        "source_smallimg2" : "/images/men_products/prod1/mainimg.jpg",
+        "source_smallimg3" : "/images/men_products/prod1/mainimg.jpg",
+        "source_smallimg4" : "/images/men_products/prod1/mainimg.jpg"
+    },
+    "116": {        
+        "title": "T-Shirt Nibbi 6",
+        "quantity": "5",
+        "size_quantity":{"S":3,"M":5,"L":6,"XL":0},
+        "price": "5.00",
+        "Description": "T shirts fait main pour homme imprimé avec Nibbi Logo, 100% coton, manche en Wax, différents coloris et motifs disponibles",
+        "source_mainimg": "/images/Tshirt_lots.jpg",
+        "source_smallimg1" : "/images/men_products/prod1/mainimg.jpg",
+        "source_smallimg2" : "/images/men_products/prod1/mainimg.jpg",
+        "source_smallimg3" : "/images/men_products/prod1/mainimg.jpg",
+        "source_smallimg4" : "/images/men_products/prod1/mainimg.jpg"
+    }  
+   }
+}  
+   
+
+
+
+
+
+

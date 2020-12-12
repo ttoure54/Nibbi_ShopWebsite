@@ -1,0 +1,723 @@
+
+
+.root{
+    --primarycolor: 
+    --mainSpacing: 
+}
+
+/* --- Navigation Bar ---*/
+
+.Nibbi-title{
+    text-align: center;
+    align-items: center;
+    padding: 0.5rem;
+    color: white;
+}
+
+/*
+.Navigationbar{
+position: sticky;
+top: 0;
+height: 60px;
+display: flex;
+align-items: center;
+background : rgb(247, 182, 122);
+background: lightsalmon;
+z-index: 1;
+border: 5px solid green;
+}
+*/
+
+
+.navbar{
+    position: sticky;
+    display: flex;
+    align-items: center;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    padding: 10px;
+    background: lightsalmon;
+    z-index: 1;
+}
+
+
+.navbar-center{
+    position: relative;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5 rem;
+    /*border: 1px solid red;*/
+}
+
+.Nibbi-nav-icon {
+    font-size: 1.5 rem;;
+}
+
+.main-title-navbar{
+    position: absolute;
+    border: 1px solid white;
+    display: flex;
+    left: 645px;
+}
+
+.nibbi-span {
+    position :absolute;
+    align-items: center;
+    text-align: center;
+
+}
+.cart-btn{
+    position: relative;
+    cursor: pointer;
+}
+
+.cart-items{
+    position: absolute;
+    top: -8px;
+    right: -8px; 
+    background: var(--primaryColor);
+    padding: 0 5px;
+    border-radius: 30%;
+    color: #fff;
+}
+
+/*----- Nav test ------*/
+
+.navbar h1{
+    flex: 1;
+}
+
+/*
+nav{
+    flex: 1;
+    text-align: right;
+}
+*/
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/*----------------- End of Navigation Bar -----------------*/
+
+/*---- Nibbi Image ----*/
+.Nibbi-logo{
+    min-height: calc(70vh - 60px);
+    background: url("Nibbi-nav-icon.jpg") center/cover
+    no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner{
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 2rem;
+}
+
+.banner-title{
+    font-size:3.4rem;
+    text-transform: uppercase;
+    letter-spacing: var(--mainSpacing);
+    margin-bottom: 3rem;
+}
+
+.banner-btn{
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    letter-spacing: var(--mainSpacing);
+    font-size: 1rem;
+    background: #fff;
+    color: black;
+    border: 1px solid #fff;
+    transition: var(--maintranssition);
+    cursor: pointer;
+
+}
+
+.banner-btn:hover{
+    background: transparent;
+    color:#fff;
+}
+/*---- End of Nibbi Image ---*/
+
+/*--- Home Our Products part---*/
+/*
+.part-ourproducts h1 {
+    position: sticky;
+    top: 0;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    vertical-align: text-top;
+    
+    text-align: center;
+    background : rgb(247, 182, 122);
+    background: #fff
+} */
+
+.part-ourproducts{
+    position: relative;
+    align-items: center;
+    min-height: calc(100vh - 60px);
+
+}
+.part-ourproducts h1 {
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+
+}
+
+.home-products-grid{
+    min-height: calc(100vh - 60px);
+    display: grid;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+.men-articles-img{
+    /*position: absolute;
+    top: 80px;
+    left: 80px;*/
+    width: 300px;
+    height: 450px;
+    cursor: pointer;
+    
+}
+
+.women-articles-img{
+    /*position: absolute;
+    top: 80px;
+    right: 80px;*/
+    width: 300px;
+    height: 450px;
+    cursor: pointer;
+}
+
+
+.kids-articles-img{
+    /*position: absolute;
+    top: 80px;
+    right: 80px;*/
+    width: 300px;
+    height: 450px;
+    cursor: pointer;
+}
+/*---------- END OF PRODUCTS PART -----------*/
+
+
+
+/*--- product Displayed link ---*/
+.products{
+    padding: 4rem 0;
+}
+
+.section-title h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+    text-transform: capitalize;
+    letter-spacing: var(--mainSpaincing);
+
+}
+
+.product-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 100%;
+    display: grid ;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    /*grid-template-columns: repeat(4, 1fr);*/
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 2rem;
+    padding: 30px;
+}
+
+.image-container{
+    position: relative;
+    overflow: hidden;
+}
+
+.product-image{
+    display: block;
+    width: 100%;
+    min-height: 12rem;
+    transition: ease-in-out;
+}
+
+.basktet-btn{
+    position: absolute;
+    top:70%;
+    right: 0;
+    background: white;
+    border: none;
+    text-transform: uppercase;
+    padding: 0.5rem 0.75rem;
+    letter-spacing: var(--mainSpacing);
+    font-weight: bold;
+    transition: var(--maintransisition);
+    transform: translateX(101%) ;
+    cursor: pointer;
+}
+
+.basktet-btn:hover{
+    color: white;
+
+}
+.image-container:hover .basktet-btn{
+    transform: translateX(0);
+}
+
+.image-container:hover .product-image{
+    opacity: 0.5;
+}
+
+.product h3{
+    text-align: center;
+}
+
+/*--- End of Products diplayed link ---*/
+
+
+
+
+
+
+/*--- Our story Parts ---*/
+.part-ourstory{
+    display: grid;
+    grid-template-rows: auto auto;
+    position: relative;
+    min-height: calc(200vh - 60px);
+    /*align-items: center;*/
+    /*background : rgb(247, 182, 122);*/
+    background: lightsalmon;
+
+}
+.part-ourstory h1{
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+    text-transform: capitalize;
+    letter-spacing: var(--mainSpaincing);
+    /*border: 1px solid red;*/
+}
+
+
+.div-top-ourstory {
+    position: relative;
+    display: grid;
+    height: calc((200vh - 60px)/2);
+    width: 100%;
+    grid-template-columns: auto auto;
+
+}
+
+.div-bottom-ourstory{
+    position: relative;
+    display: grid;
+    height: calc((200vh - 60px)/2);
+    width: 100%;
+    grid-template-columns: auto auto;
+
+}
+/*
+.home-ourstory {
+    position: absolute;
+    flex-wrap: wrap;
+    padding: 5px;
+    border: 1px solid red;
+    width: 50%;
+    height: 50%;
+    flex: 1;
+}
+*/
+/*
+.home-ourstory > div{
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    flex: 1;
+}
+*/
+
+.top-story-img{
+    position: relative;
+    align-items: center;
+    display: grid;
+    height: 100%;
+    width: 50%;
+    top: 0px;
+    background: lightsalmon;
+    /*border: 5px solid green;*/
+}
+
+.top-story-txt{
+    position: absolute;
+    display: grid;
+    height: 100%;
+    width: 50%;
+    right: 0px;
+    background: white;
+    /*border: 5px solid green;*/
+}
+
+.anta-img{
+    position: relative;
+    /*display: flex;*/
+    /*align-items: stretch;*/
+    /*height: 100%;
+    width: 70%;*/
+    right: 0px;
+
+    padding: 5px;
+    
+}
+
+.top-story-txt h1{
+    padding: 25px; 
+    position: relative;
+    text-align: center;
+    font-size: 2rem;
+    font-style: italic;
+
+
+}
+
+.top-story-txt p{
+    position: relative;
+    bottom: 200px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+.bottom-story-img{
+    position: absolute;
+    display: grid;
+    height: 100%;
+    width: 50%;
+    right:0px;
+    /*border: 5px solid blue;*/
+    padding: 5px;
+    background: white;
+}
+
+.bottom-story-txt{
+    position: absolute;
+    display: grid;
+    height: 100%;
+    width: 50%;
+    background: lightsalmon;
+    /*border: 5px solid blue;*/
+}
+
+.story-boutique-img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+
+}
+
+.bottom-story-txt h2{
+    position: relative;
+    font-style: italic;
+    font-size: 2rem;
+    padding: 25px;
+    top: 50px;
+    text-align: center;
+}
+.bottom-story-txt p{
+    position: relative;
+    font-size: 1.5rem;
+    padding: 5px;
+    text-align: center;
+    justify-content: center;
+
+}
+/*--- End of Our Story Parts ---*/
+
+
+
+
+/*------- EVENTS PART ---------*/
+
+.part-events{
+    display: grid;
+    position: relative;
+    min-height: calc(90vh - 60px);
+    grid-template-columns: auto auto;
+    padding: 5px;
+    background: white;
+}
+
+.div-events-img{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    display: grid;
+}
+.event-img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.div-events-txt{
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    right: 0px;
+    display: grid;
+}
+
+.div-events-txt h1{
+    position: relative;
+    font-size: 2rem;
+    font-style: italic;
+    padding: 25px;
+}
+
+.div-events-txt p{
+    position: relative;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+    bottom: 100px;
+}
+/*-------- END OF EVENTS PART -------*/
+
+
+
+
+
+/*--------- WAX ENJOY PART --------*/
+
+.wax-enjoy-grid{
+    display: grid;
+    position: relative;
+    padding: 5px;
+    min-height: calc(70vh - 60px);
+    grid-template-columns: auto auto auto auto;
+}
+
+.div-wax-enjoy1{
+    position: relative;
+    height: 100%;
+    display: grid;
+    /*border: 5px solid red;*/
+
+}
+.div-wax-enjoy2{
+    position: relative;
+    display: grid;
+    height: 100%;
+    /*border: 5px solid red;*/
+
+}
+.div-wax-enjoy3{
+    position: relative;
+    display: grid;
+    height: 100%;
+    /*border: 5px solid red;*/
+}
+
+.div-wax-enjoy4{
+    position: relative;
+    display: grid;
+    height: 100%;
+    /*border: 5px solid red;*/
+}
+
+
+.enjoy1-img{
+    position: absolute;
+    height: 100%;
+    width: 100%
+}
+
+.enjoy2-img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.enjoy3-img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.enjoy4-img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+/*-------- END OF ENJOY PART --------*/
+
+
+
+
+/*--- Conatact US ---*/
+
+.part-contacts{
+    height: calc(40vh - 60px);
+    text-align: center;
+    background: lightsalmon;
+    position: relative;
+    bottom: 0px;
+}
+
+.footer-nibbi{
+    /*border: 1px solid red;*/
+    height: calc(40vh - 60px);
+    display: flex;
+}
+
+.footer-contacts{
+    flex: 1;
+    padding: 25px;
+    /*border:  1px solid white*/;
+}
+
+.fa fa-facebook-square{
+    height: 100px;
+    width: 100px; 
+}
+
+.footer-copyright{
+    background: lightsalmon;
+}
+
+
+
+.contact-button{
+    background-color: white;
+    border-radius: 20px;
+    border: none;
+    color: lightsalmon;
+    padding: 10px 25px;
+}
+
+.contact-button:hover{
+    cursor: pointer;
+}
+
+.modal-contact{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-contact.show{
+    display: flex;
+}
+
+.modal-contact.hide{
+    display: none;
+    opacity: 0;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid lightsalmon;
+    width: 420px;
+    height: 520px;
+  }
+  
+  .modal-content input {
+      border-radius: 10px;
+      padding: 5px;
+      margin: 5px 0;
+      width: 100%;
+      border: 1px solid lightsalmon;
+      outline: none;
+  }
+
+
+  .send-button{
+      color: white;
+      background-color: lightsalmon;
+      border: 1px solid lightsalmon;
+      width: 100%;
+      padding: 10px;
+      border-radius: 20px;
+      font-size: 15px;
+      margin: 10px 0;
+      outline: none;
+      cursor: pointer;
+  }
+
+  .send-button:hover{
+      background-color: white;
+      cursor: pointer;
+      text-decoration-color: lightsalmon;
+  }
+
+  .message-box{
+      height: 25%;
+      border-radius: 20px;
+      padding: 10px;
+      margin: 10px 0;
+      width: 100%;
+      border: 1px solid lightsalmon;
+      outline: none;
+  }
+
+
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    background-color: white;
+    outline: none;
+    border: none;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    outline: none;
+    background-color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+

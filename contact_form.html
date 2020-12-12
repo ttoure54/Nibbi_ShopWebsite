@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+
+    <link rel="stylesheet" href="style-prod.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav_menu.css">
+
+
+</head>
+
+
+<body>
+    <div id= "modal_contact" class="modal-contact">
+        <div class="modal-content">
+            <span><button id="close" class="close">&times;</button></span>                        
+            
+                <h6>Nom</h6>
+                <input type="Nom" placeholder="Entrer votre nom">
+                <h6>Prenom</h6>
+                <input type="Prenom" placeholder="Entrer votre prenom">
+            
+                <h6>Email</h6>
+                <input type="email" name="adresse mail" id="contact-mail" placeholder="Entrer votre mail">
+                
+                                      
+                <h6>Votre Message</h6>
+                <textarea name="message" id="contact-message" class="message-box" placeholder="Nous ecoutons votre message">
+                </textarea>
+                                        
+                <button class="send-button" onclick="send_contactmessage()">Envoyer</button>
+                <h4 id="send-contactmessage"></h4>
+        </div>
+
+    <scipt src="app.js"></scipt>
+    <scipt src="nav_menu.js"></scipt>
+    <script src="mailcontact.js"></script>
+</body>
