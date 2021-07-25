@@ -188,6 +188,7 @@ class CartItems{
 
 
         })
+        
         console.log(cart_content_child);
         cart_content.appendChild(cart_content_child);
         console.log(cart_content);
@@ -199,9 +200,10 @@ class CartItems{
 
     remove_item_cart(id_rm){
 
-        console.log("."+id_rm);
 
-        const remove_item = document.getElementById(id_rm);
+        console.log("cart-items-"+id_rm);
+
+        const remove_item = document.getElementById("cart-items-"+id_rm);
         remove_item.remove();
         return this;
     }
@@ -468,16 +470,6 @@ class Display_details{
 
 
 
-
-
-
-
-
-
-
-
-
-
 function items_id_load(){
    console.log(items_id.reset_items_id());
 
@@ -521,7 +513,8 @@ function products_load_details(){
     //localStorage.clear();
 
     var ProductImg = document.getElementById("ProductImg");
-    var SmallImg = document.getElementsByClassName("small-img-col");
+    var SmallImg = document.getElementsByClassName(".small-img-col");
+    
 
     SmallImg[0].onclick = function() 
     {
@@ -546,8 +539,12 @@ function products_load_details(){
 
 }
 
-function add_to_cart(){
 
+
+/************************************************************** 
+ *********** Cart Funtion ****************************/
+
+function add_to_cart(){
     //console.log("add to cart");
 
     const items_infos_loc = localStorage.getItem("items-infos");
@@ -587,12 +584,18 @@ function add_to_cart(){
 
 }
 function disp_cart_btn(){
+    cart.add_item_to_cartdisp();
     cart.disp_cart();
 }
 
 function clear_all_cart(){
     cart.clear_cart();
+    cart.add_item_to_cartdisp();
     cart.disp_cart();
+}
+
+function cart_remove_btn(){
+    cart.remove_item_cart();
 }
 
 // *******Currently used and efficient *********
