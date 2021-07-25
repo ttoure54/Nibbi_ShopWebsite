@@ -1,0 +1,84 @@
+
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+
+<h3>cart</h3>
+
+
+<!---------------- CART -------------------->
+<div class="cart-overlay">
+    <div class="cart">
+        <span class="close-cart">
+            <h4>Close</h4>
+        </span>
+        <h2>Your cart</h2>
+        <div class="cart-content">
+
+            {% for item in items %}
+            <!----cart item --> 
+            <div class="cart-item">
+                <img src="{{item.item.imageURL}}" alt="IMG">
+                <div>
+                    <h4>{{item.item.title}}</h4>
+                    <h5>{{item.item.price| floatformat:2}}€</h5>
+                    <span class="remove-item">Annuler</span>
+                </div>
+                <div>
+                    <p class="items-amount">{{item.quantity}}</p>
+                    <br>
+                    <p>subtotal: {{item.get_total}}€</p>
+                </div>
+            </div>
+            {% endfor %}
+         
+        </div>
+        <div class="cart-footer">
+            <h3>Total Item : <span class=cart-total>{{order.get_cart_items}}</span></h3>  
+            <br>
+            <h3>Total : <span class=cart-total>{{order.get_cart_total}}€</span></h3>          
+        </div>
+    </div>
+</div>
+<!-------------------- END OF CART ------------------->
+
+{% endblock content %}
+
+    
+<div class="small-container cart-page">
+    <table class="table">
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+         <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="{{item.item.imageURL}}" >
+                    <div>
+                        <p>{{item.item.title}}</p>
+                        <small>Price: {{item.item.price| floatformat:2}}€</small>
+                        <br>
+                        <p class="items-amount">{{item.quantity}}</p>
+                        <p>subtotal: {{item.get_total}}€</p>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>29</td>
+        </tr>
+        <tr>
+
+
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>500.00€</td>
+                </tr>
+            </table>
+        </div>
+</div>

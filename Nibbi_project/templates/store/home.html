@@ -1,0 +1,143 @@
+{% extends 'store/main.html' %}
+{% load static %}
+
+
+{% block content %}
+
+   
+    <!-- Nibbi Logo  -->
+    <header class="Nibbi-logo"></header>
+    <!-- Nibbi Logo -->
+
+
+    <!------------ PRODUCTS PART ------------>
+
+    <header class="part-ourproducts">
+        <!--<h1>Our Products</h1>-->
+            <div class="home-products-grid">
+                <div id="men-products">        
+                    <a href="Product_pages.html">        
+                        <img src="{% static 'images/Men-articles.jpg' %} " alt="tshirt-img" class="men-articles-img">
+                        <h3>Hommes</h3>
+                    </a>
+                </div>
+                <div>
+                    <img src="{% static 'images/Kids.jpg' %}" alt="kids" class="kids-articles-img">
+                    <h3>Enfants</h3>
+                </div>
+                <div>
+                    <img src="{% static 'images/women-articles.jpg'%}" alt="home-product-img" class="women-articles-img">
+                    <h3 stylesheet>Femmes</h3>
+                </div>
+            </div>
+    </header>
+
+    <!------------ END OF PRODUCTS PART ------------>
+
+
+    <!------------ ENJOY FOTOS PART ------------>
+
+    <header class="wax-enjoy-grid">
+
+        <div class="div-wax-enjoy1">
+            <img src="{% static 'images/wax_enjoy2.jpg'%}" class="enjoy2-img" alt="wax-enj1">
+        </div>
+        <div class="div-wax-enjoy2">
+            <img src="{% static 'images/Wax_enjoy1.jpg'%}" class= "enjoy1-img" alt="wax-enj2">
+        </div>
+        <div class="div-wax-enjoy3">
+            <img src="{% static 'images/Kids_boys.jpg'%}" class="enjoy3-img" alt="wax-enj3">
+        </div>
+        <div class="div-wax-enjoy4">
+            <img src="{% static 'images/Kids.jpg'%}" class="enjoy4-img" alt="wax-enj4">
+        </div>
+        
+    </header>
+
+    <!------------ END OF ENJOY FOTOS PART ------------>
+
+    <!------------ STORY PART ------------>
+
+    <header class="part-ourstory">
+
+        <div class="div-top-ourstory">
+
+            <div class="top-story-img">
+                <!--<div class="home-ourstory story-img">-->
+                    <img src="{% static 'images/Anta_robe.jpg'%}" alt="Anta_robe" class="anta-img">    
+            </div>
+            <div class="top-story-txt">
+
+                    <h1>My Story</h1>
+                    <p> 
+                        <br>&Ntilde;IBBI signifie "Rentrer" en Wolof</br>
+                        <br>L'histoire d'un retour aux sources</br>
+                        <br> Mère de 3 jeunes filles, Nibbi a été fondeé 2016..... BLA BLA BLA ; </br>
+                        <br>Choix de police, taille de caratère, couleur, Images...
+
+                    </p>
+            </div>
+
+        </div>
+
+        <div class="div-bottom-ourstory"> 
+            <div class="bottom-story-txt">
+                
+                <h2>Création Authentique</h2>
+                <p> Un savoir-faire unique et des créations origianales assemblées, part des artisains senegalais.
+                    <br>  </br>
+
+                    <br>Des artisants talenteux<br>
+                    <br>Un savoir-faire unique</br>
+                    <br>Des matières premières de qualités</br>
+                    <br>Des produits </br>
+                    <br></br>
+                    <br>&Ntilde;IBBI = Le plaisir de création original + Le soutiens d'artisants talentueux</br>
+                </p>
+            
+
+            </div>
+
+            <div class="bottom-story-img">
+                 <img src="{% static 'images/Atelier_thies.jpg'%}" class="story-boutique-img" alt="Boutique_nibbi">
+            </div>
+        </div>
+    </header>
+
+    <!------------ END OF STORY PART ------------>
+
+
+    <!-------- EVENTS PARTS --------->
+
+    <header class="part-events">
+        <div class="div-events-img">
+            <img src="{% static 'images/marche_createur.jpg'%}" class="event-img" alt="marches-createur">
+        </div>
+        <div class="div-events-txt">
+            
+            <h1>Nos Evenements</h1>
+            <p> 
+                <br> PARTICIPATIONS RECENTES</br>
+                <br></br>
+                <br>- Marchées des créateurs</br>
+                <br>- Rivetoile</br>
+                <br>- Galerie La Fayette</br>
+
+            </p>
+
+        </div>
+    </header>
+
+    <!-------- END OF EVENTS PARTS --------->
+
+
+    
+<!----- 
+    <script src="app.js"></script>
+    <script src="mailcontact.js"></script>
+
+--->
+
+
+
+{% endblock content %}
