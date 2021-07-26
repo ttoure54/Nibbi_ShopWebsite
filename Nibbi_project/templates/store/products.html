@@ -29,11 +29,11 @@
                     </a>
                 </div> 
                 <br>
-                <button type="button" class="shopping-cart-button float-right" data-toggle="shopping-cart-dropdown">
+                <button type="button" class="basket-btn update-cart shopping-cart-button float-right" data-product= "{{product.id}}" data-action="add" data-id="1" data-toggle="shopping-cart-dropdown">
                     <i class="fa fa-shopping-cart"></i>
-                    <span class="text">Shopping Cart</span>
+                    <span class="text">Panier</span>
                 </button>      
-                <div class="basket-btn update-cart" data-product= "{{product.id}}" data-action="add" data-id="1">Django Basket</div>
+                <!---- <div class="basket-btn update-cart" data-product= "{{product.id}}" data-action="add" data-id="1">Django Basket</div> ---->
             </a>
         </div>
         <h3>{{product.title}}</h3>

@@ -14,13 +14,39 @@ for(i=0; i<updateBtn.length; i++){
 
         console.log('USER: ', user)
         if (user == 'AnonymousUser'){
-            console.log('User is not authenticated')
+            addCookieItem(productId, action)
         }else{
             console.log('User logged')
             updateUserOrder(productId, action)
         }
 
     })
+}
+
+function addCookieItem(productId, action){
+
+    if (action == "add"){
+        if (cookie_cart[productId]==undefined){
+            cookie_cart[productId]={'quantity':1}
+        }else{
+            cookie_cart[productId]['quantity'] += 1
+        }
+    }
+
+    if (action == "remove"){
+        cookie_cart[productId]['quantity'] -= 1
+        if(cookie_cart[productId]['quantity'] <= 0){
+            console.log('delete ietm')
+            delete(cookie_cart[productId]);
+        }
+    }
+
+    console.log('Cookie cart:', cookie_cart)
+
+    document.cookie = 'cart='+JSON.stringify(cookie_cart)+";domain=;path=/"
+
+    console.log('User is not authenticated: adding cookie')
+
 }
 
 
