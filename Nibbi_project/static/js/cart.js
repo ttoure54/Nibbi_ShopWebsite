@@ -26,7 +26,7 @@ for(i=0; i<updateBtn.length; i++){
 function addCookieItem(productId, action){
 
     if (action == "add"){
-        if (cookie_cart[productId]==undefined){
+        if (cookie_cart[productId]===undefined){
             cookie_cart[productId]={'quantity':1}
         }else{
             cookie_cart[productId]['quantity'] += 1

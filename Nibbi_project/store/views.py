@@ -4,6 +4,7 @@ from django.http import JsonResponse
 # Create your views here.
 
 from .models import *
+from .utils import cookieCart, cartData
 
 import datetime 
 import json
@@ -22,9 +23,13 @@ def products(request):
 
     products_list = Item.objects.all()
 
-
-
     """
+
+    data = cartData(request)
+    cartItems = data['cartItems'] 
+    order = data['order']
+    items = data['items']
+
     items1 = Item_test()
     items2 = Item_test()
     items3 = Item_test()
@@ -56,33 +61,24 @@ def cart(request):
 
 
     #Check Authentification of the user
-
-    if request.user.is_authenticated:
-        customer = request.user.customer
-        order, created = Order.objects.get_or_create(customer=customer, completed=False)
-        items = order.orderitem_set.all()
-        cartItems = order.get_cart_items
-    else:
-        items = []
-        order = {'get_cart_total:':0, 'get_cart_items':0, 'shipping':False}
-        cartItems = order['get_cart_items']
-    
+    data = cartData(request)
+    cartItems = data['cartItems'] 
+    order = data['order']
+    items = data['items']
 
     context = {}
     return render(request, 'store/cart.html', {"items" : items, "order" : order, "cartItems": cartItems})
 
 
+        
+
+
 def checkout(request):
 
-    if request.user.is_authenticated:
-        customer = request.user.customer
-        order, created = Order.objects.get_or_create(customer=customer, completed=False)
-        items = order.orderitem_set.all()
-        cartItems = order.get_cart_items
-    else:
-        items = []
-        order = {'get_cart_total:':0, 'get_cart_items':0, 'shipping':False}
-        cartItems = order['get_cart_items']
+    data = cartData(request)
+    cartItems = data['cartItems'] 
+    order = data['order']
+    items = data['items']
 
     
 
