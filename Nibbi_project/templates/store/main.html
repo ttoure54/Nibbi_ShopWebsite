@@ -10,10 +10,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
     <title>&Ntilde;IBBI</title>
 
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
      <!-- Bootstrap core CSS -->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -24,6 +27,7 @@
     <link rel="stylesheet" href=" {% static 'css/main.css' %}">
     <link rel="stylesheet" href=" {% static 'css/style-prod.css' %}">
     <link rel="stylesheet" href="{% static 'css/cart_sum.css' %}"> 
+    <link href="form-validation.css" rel="stylesheet">
 
     <script type="text/javascript">
         var user = '{{request.user}}'
@@ -56,7 +60,7 @@
             for (var i = 0; i < cookiesArray.length; i++) {
                 var cookie = cookiesArray[i].split("=");
                 // Removing the whitespaces at the beginning of the cookie name and compare with the string
-                if (name == cookie[i].trim()) {
+                if (name == cookie[0].trim()) {
                     //Decode the cookie value and return 
                     return decodeURIComponent(cookie[1]);             
                 }   
@@ -66,13 +70,14 @@
         }
 
         var cookie_cart = JSON.parse(getCookie('cart'));
+        console.log(cookie_cart)
 
         if(cookie_cart == undefined){
             cookie_cart = {}
             console.log('cart created')
             document.cookie = 'cart='+JSON.stringify(cookie_cart)+";domain=;path=/"
         }
-        console.log('Cookie cart:', cookie_cart)
+        console.log('main.html Cookie cart:', cookie_cart)
 
 
 
@@ -99,10 +104,10 @@
         <div class="navbar-center">
             <nav>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Products</a></li>
-                    <li><a href="">Story</a></li>
-                    <li><a href="">Contacts</a></li>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'products' %}">Products</a></li>
+                    <li><a href="{% url 'cart' %}">Cart</a></li>
+                    <li><a href="{% url 'checkout' %}">Checkout</a></li>
                 </ul>
             </nav>
             <div class="logo-nibbi">

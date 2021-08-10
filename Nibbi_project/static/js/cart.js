@@ -26,7 +26,7 @@ for(i=0; i<updateBtn.length; i++){
 function addCookieItem(productId, action){
 
     if (action == "add"){
-        if (cookie_cart[productId]===undefined){
+        if (cookie_cart[productId]==undefined){
             cookie_cart[productId]={'quantity':1}
         }else{
             cookie_cart[productId]['quantity'] += 1
@@ -41,11 +41,13 @@ function addCookieItem(productId, action){
         }
     }
 
-    console.log('Cookie cart:', cookie_cart)
+    console.log('cart.js Cookie cart:', cookie_cart)
 
     document.cookie = 'cart='+JSON.stringify(cookie_cart)+";domain=;path=/"
 
-    console.log('User is not authenticated: adding cookie')
+    location.reload()
+
+    //console.log('User is not authenticated: adding cookie')
 
 }
 

@@ -11,9 +11,8 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    border: 5px solid red
+    /*border: 5px solid red*/
 }
-
 .container{
     max-width: 1300px;
     margin: auto;
