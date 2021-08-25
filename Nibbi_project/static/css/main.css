@@ -249,8 +249,8 @@ a {
     max-width: 100%;
     display: grid ;
     justify-content: space-between;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    /*grid-template-columns: repeat(4, 1fr);*/
+    /*grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));*/
+    grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 1.5rem;
     grid-row-gap: 2rem;
     padding: 30px;

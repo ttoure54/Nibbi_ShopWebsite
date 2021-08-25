@@ -70,7 +70,14 @@ def cart(request):
     return render(request, 'store/cart.html', {"items" : items, "order" : order, "cartItems": cartItems})
 
 
-        
+def article(request,slug):
+
+    print (slug)
+
+    article = Item.objects.get(slug=slug)
+    return render(request, 'store/prod_detail.html', {'article': article})
+
+       
 
 
 def checkout(request):

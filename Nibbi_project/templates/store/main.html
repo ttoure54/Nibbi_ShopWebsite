@@ -101,7 +101,11 @@
     <!-- Navigation bar -->
 
     <div class="navbar">
-        <div class="navbar-center">
+        <div class="logo-nibbi">
+            <a href="index.html">
+                <img src="{% static 'images/Nibbi_white_logo.jpg'%} " q width="75px">
+            </a>
+        </div>
             <nav>
                 <ul>
                     <li><a href="{% url 'home' %}">Home</a></li>
@@ -110,11 +114,6 @@
                     <li><a href="{% url 'checkout' %}">Checkout</a></li>
                 </ul>
             </nav>
-            <div class="logo-nibbi">
-                <a href="index.html">
-                    <img src="{% static 'images/Nibbi_white_logo.jpg'%} " q width="75px">
-                </a>
-            </div>
             <div>
                 <h4>Panier</h4>
             </div>
@@ -122,6 +121,8 @@
     </div>
 
     <!-- End of Navigation Bar -->
+
+    <head class="Nibbi-logo"></head>
 
     {% block content %}
 

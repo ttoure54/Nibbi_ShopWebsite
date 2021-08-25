@@ -15,6 +15,9 @@ CATEGORIES_CHOICES = (
 
 
 class Item(models.Model):
+
+    #ID : Sex-category-gammenb-nb
+    #110503
     #item_id = models.IntegerField()
     title = models.CharField(max_length=200)
     #img = models.CharField(max_length=200)
@@ -27,6 +30,11 @@ class Item(models.Model):
 
     def __str__(self):
         return self.title
+    
+    @property
+    def article(self):
+        return self.item_id
+
     
     @property 
     def imageURL(self):

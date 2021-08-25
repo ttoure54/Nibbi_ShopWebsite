@@ -8,7 +8,10 @@
 
 
 <h2>Products Parts</h2> 
-    <div id="product-center" class="product-center">
+
+
+    <div class="small-container">
+        <div class= "row">
 
 
 {% for product in products_list %}
@@ -19,29 +22,26 @@
     <h3>{{product.price}}</h3>
     <h3>{{product.img}}</h3>
         ---->
-
-    <article class="product">
-        <div class= "image-container">
-            <a href="product_detailtemplate.html">
-                <div onclick=men_disp_test()>
-                    <a href="product_detailtemplate.html">
+                <div class="col-4">
+                    <a href="{% url 'article' slug='article-1'%}">
                         <img src="{{product.imageURL}}"alt="product" class="product-image">
+                        <h4>{{product.title}}</h4>
                     </a>
+                    <p>{{product.price |floatformat:2}}€</p>
                 </div> 
-                <br>
+                <!--
                 <button type="button" class="basket-btn update-cart shopping-cart-button float-right" data-product= "{{product.id}}" data-action="add" data-id="1" data-toggle="shopping-cart-dropdown">
                     <i class="fa fa-shopping-cart"></i>
                     <span class="text">Panier</span>
-                </button>      
+                </button>    ---->  
                 <!---- <div class="basket-btn update-cart" data-product= "{{product.id}}" data-action="add" data-id="1">Django Basket</div> ---->
-            </a>
-        </div>
-        <h3>{{product.title}}</h3>
-        <h4>{{product.price |floatformat:2}}€</h4>
-    </article>
+        
+        
 
 {% endfor%}
 
 </div>
+</div>
+
 
 {% endblock content %}
