@@ -1,0 +1,73 @@
+{% extends 'store/main.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="small-container single-product">
+    <div class="row">
+        <div class="col-2">
+            <img src="{{article.imageURL}}" width="100%" id="product-img">
+
+            <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="images/Tshirt_lots.jpg" width="100%">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/Tshirt_lots.jpg" width="100%">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/Tshirt_lots.jpg" width="100%">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/Tshirt_lots.jpg" width="100%">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-2">
+            <p>Home/Tshirt</p>
+            <h1>{{article.title}}</h1>
+            <h4>{{article.price}}€</h4>
+            <select>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+                <option>XLL</option>
+            </select>
+            <br>
+            <input type="number" value=1>
+            <br>
+            <br>
+            <h3>Products Details</h3>
+            <br>
+            <p>T shirts fait main pour homme imprimé avec Nibbi Logo, 
+                100% coton, manche en Wax, différents coloris et 
+                motifs disponibles 
+            </p>
+            <button onclick="open_contactform()" class="send-button">Infos Commandes</button>
+            <div id= "modal_contact" class="modal-contact">
+                <div class="modal-content">
+                    <span><button id="close" class="close">&times;</button></span>                        
+                        <h6>Nom</h6>
+                        <input type="Nom" placeholder="Entrer votre nom">
+                        <h6>Prenom</h6>
+                        <input type="Prenom" placeholder="Entrer votre prenom">
+                        <h6>Email</h6>
+                        <input type="email" name="adresse mail" id="mail" placeholder="Entrer votre mail"> 
+                        <label class="contact-product">Objet</label>
+                        <label class="contact-taille-infos">Taille</label>              
+                        <h6>Votre Message</h6>
+                        <textarea name="message" id="contact-message" class="message-box" placeholder="Nous ecoutons votre message">
+                        </textarea>
+                                                
+                        <button class="send-button" onclick="send_contactmessage()">Envoyer</button>
+                        <h4 id="send-contactmessage"></h4>
+                </div>
+             </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
