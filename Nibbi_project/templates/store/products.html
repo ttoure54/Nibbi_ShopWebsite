@@ -10,8 +10,8 @@
 <h2>Products Parts</h2> 
 
 
-    <div class="small-container">
-        <div class= "row">
+<div class="small-container">
+    <div class= "row">
 
 
 {% for product in products_list %}
@@ -23,9 +23,11 @@
     <h3>{{product.img}}</h3>
         ---->
                 <div class="col-4">
-                    <a href="{% url 'article' slug='article-1'%}">
+                    <a href="{% url 'article' slug='article-1' %}">
                         <img src="{{product.imageURL}}"alt="product" class="product-image">
                         <h4>{{product.title}}</h4>
+                        <h3>{{product.slug}}</h3>
+                        
                     </a>
                     <p>{{product.price |floatformat:2}}€</p>
                 </div> 

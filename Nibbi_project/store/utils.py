@@ -41,7 +41,7 @@ def cookieCart(request):
                 items.append(item_dic)
                 order['shipping'] = True
             except:
-                console.log("item not found in database")
+                print("item not found in database")
     
 
         context = {}
@@ -89,4 +89,8 @@ def guestOrder(data, request):
 
     return order, customer
 
-    
+
+"""
+usdb 
+
+"""
